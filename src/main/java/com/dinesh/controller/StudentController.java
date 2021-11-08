@@ -22,9 +22,10 @@ public class StudentController {
 	@PostMapping("/registerStudent")
 	public Student registerStudent(@RequestBody Student student)
 	{
-		
+		System.out.println("SecondName");
 		System.out.println("FirstName: "+student.getFirstName());
 		return studentRepository.save(student);
+		
 	}
 
 }
